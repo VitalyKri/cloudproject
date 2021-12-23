@@ -1,0 +1,6 @@
+com\geekbrains\client\AuthorizationController.class
+com\geekbrains\client\NettyClient.class
+com\geekbrains\client\StorageController.class
+com\geekbrains\client\handler\FileUploadClientHandler.class
+com\geekbrains\client\StorageClient.class
+com\geekbrains\client\handler\ClientInitializer.class

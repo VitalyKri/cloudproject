@@ -1,0 +1,9 @@
+com\geekbrains\core\message\ListFilesMessage.class
+com\geekbrains\core\message\FileManager.class
+com\geekbrains\core\message\FileUploadFile.class
+com\geekbrains\core\message\Message.class
+com\geekbrains\core\message\ServiceMessage.class
+com\geekbrains\core\message\AbstractMessage.class
+com\geekbrains\core\message\Callback.class
+com\geekbrains\core\message\UserMessage.class
+com\geekbrains\core\message\TermitalCommand.class

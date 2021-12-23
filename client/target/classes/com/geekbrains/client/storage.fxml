@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="427.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.geekbrains.client.StorageController">
+    <MenuBar VBox.vgrow="NEVER">
+        <Menu mnemonicParsing="false" text="File">
+            <MenuItem mnemonicParsing="false" text="Quit" />
+         <MenuItem mnemonicParsing="false" text="Create" />
+        </Menu>
+    </MenuBar>
+    <AnchorPane VBox.vgrow="ALWAYS">
+        <TableView fx:id="tableViewClient" onMouseClicked="#clickTable" prefHeight="407.0" prefWidth="250.0">
+         <columns>
+            <TableColumn fx:id="typeId1" prefWidth="37.0" text="TYPE" />
+            <TableColumn fx:id="nameColumn1" prefWidth="162.0" text="NAME" />
+            <TableColumn fx:id="sizeColumn1" prefWidth="50.0" text="size" />
+         </columns></TableView>
+        <Label layoutX="250.0" layoutY="338.0" text="Status" />
+        <ListView fx:id="statuses" layoutX="250.0" layoutY="355.0" prefHeight="52.0" prefWidth="200.0" />
+        <TableView fx:id="tableViewServer" layoutX="450.0" onMouseClicked="#clickTable" prefHeight="407.0" prefWidth="250.0">
+        <columns>
+            <TableColumn fx:id="typeId2" prefWidth="37.0" text="TYPE" />
+            <TableColumn fx:id="nameColumn2" prefWidth="162.0" text="NAME" />
+            <TableColumn fx:id="sizeColumn2" prefWidth="50.0" text="size" />
+        </columns>
+        </TableView>
+        <Button fx:id="clientCopy" layoutX="257.0" layoutY="43.0" mnemonicParsing="false" onAction="#copyFileToServer" prefHeight="36.0" prefWidth="90.0" text="&gt;" />
+        <Button fx:id="serverCopy" layoutX="353.0" layoutY="43.0" mnemonicParsing="false" onAction="#copyFileFromServer" prefHeight="36.0" prefWidth="90.0" text="&lt;" />
+      <Button layoutX="257.0" layoutY="87.0" mnemonicParsing="false" onAction="#createDirectory" prefHeight="36.0" prefWidth="186.0" text="Create directory" textAlignment="JUSTIFY">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="257.0" layoutY="131.0" mnemonicParsing="false" onAction="#createFile" prefHeight="36.0" prefWidth="186.0" text="Create file" textAlignment="JUSTIFY">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <TextField fx:id="console" layoutX="250.0" layoutY="313.0" prefHeight="25.0" prefWidth="200.0" />
+      <Label layoutX="250.0" layoutY="296.0" text="Console" />
+      <Button layoutX="257.0" layoutY="177.0" mnemonicParsing="false" onAction="#readFile" prefHeight="36.0" prefWidth="186.0" text="Read file" textAlignment="JUSTIFY">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button layoutX="257.0" layoutY="222.0" mnemonicParsing="false" onAction="#delete" prefHeight="36.0" prefWidth="186.0" text="Delete" textAlignment="JUSTIFY">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+    </AnchorPane>
+</VBox>

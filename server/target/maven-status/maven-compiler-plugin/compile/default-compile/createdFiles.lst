@@ -1,0 +1,5 @@
+com\geekbrains\server\NettyServer$1.class
+com\geekbrains\server\handler\FileUploadServerHandler.class
+com\geekbrains\server\db\AuthService.class
+com\geekbrains\server\handler\ServerInitializer.class
+com\geekbrains\server\NettyServer.class
